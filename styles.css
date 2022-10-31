@@ -1,0 +1,58 @@
+:root {
+    --focus-color: #fdd205; 
+}
+
+
+body {
+    margin: 0; 
+}
+
+header {
+    display: flex; 
+    justify-content: space-between;
+    padding: 20px 30px; 
+    font-family: Verdana, sans-serif; 
+    text-transform: uppercase; 
+}
+
+h1 {
+    margin: 0; 
+    font-size: 40px;  
+    font-weight: normal;
+}
+
+.brand-name {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+#header-img {
+    height: 50px; 
+    width: 50px; 
+}
+
+#nav-bar > ul {
+    display: flex; 
+    justify-content: space-between;
+    gap: 20px; 
+}
+
+li {
+    padding: 15px; 
+    list-style: none;
+    font-size: 25px; 
+    background-color: var(--focus-color);
+}
+
+li > a {
+    padding: 0; 
+    text-decoration: none;
+    color: white; 
+}
+
+li:hover {
+    background-color: black; 
+    transition: 0.3s;
+    cursor: pointer;
+}
