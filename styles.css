@@ -3,6 +3,7 @@
 }
 
 
+
 body {
     margin: 0; 
     font-family: 'Courier New', Courier, monospace;
@@ -24,11 +25,17 @@ h2 {
 }
 
 header {
+    position: fixed; 
+    top: 0; 
+    z-index: 2;
     display: flex; 
     justify-content: space-between;
     padding: 20px 30px; 
+    width: 100vw;  
+    background-color: white; 
     font-family: Verdana, sans-serif; 
     text-transform: uppercase; 
+    border-bottom: 1px dashed black;
 }
 
 .brand-name {
@@ -40,6 +47,12 @@ header {
 #header-img {
     height: 50px; 
     width: 50px; 
+}
+
+#nav-bar {
+    position: fixed;
+    top: 0; 
+    right: 1.5%; 
 }
 
 #nav-bar > ul {
@@ -68,12 +81,15 @@ li:hover {
 }
 
 #features {
+    position: relative;
     display: flex; 
     justify-content: center; 
     align-items: center; 
     gap: 20px; 
     flex-wrap: wrap;
-    margin: 50px 30px 100px; 
+    margin: 50px 0px 100px;
+    padding-bottom: 200px;  
+    top: 150px; 
 }
 
 #collage {
@@ -118,7 +134,7 @@ li:hover {
     flex-direction: column;
     align-items: center;
     gap: 50px; 
-    padding: 150px 30px; 
+    padding: 150px 0px; 
     background-color: var(--focus-color);
 }
 
