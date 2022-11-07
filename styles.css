@@ -181,3 +181,50 @@ button:hover {
 button:active {
     background-color: white;
 }
+
+#newsletter {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/newsletter-bg.jpg);
+    background-size: cover; 
+    height: 1000px; 
+}
+
+#newsletter > h2 {
+    color: white; 
+    text-shadow: 2px 2px 3px #000000ab;
+}
+
+form {
+    margin: 20px; 
+    padding: 50px 100px; 
+    background-color: var(--focus-color);
+}
+
+input[type=email] {
+    padding: 2px 5px; 
+    width: 200px; 
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: lowercase;
+    border: 1px solid black; 
+}
+
+#submit {
+    padding: 2px 5px;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: lowercase;
+    border: 1px solid; 
+    border-radius: 0;
+}
+
+#submit:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+    transition: 0.3s; 
+}
+
+#submit:active {
+    background-color: white;
+}
