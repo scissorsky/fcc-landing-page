@@ -71,6 +71,8 @@ li:hover {
     display: flex; 
     justify-content: center; 
     align-items: center; 
+    gap: 20px; 
+    flex-wrap: wrap;
     margin: 50px 30px 100px; 
 }
 
@@ -98,11 +100,12 @@ li:hover {
 
 
 #features .ft-text {
-    margin-left: 20px; 
     width: 800px; 
+    text-transform: lowercase;
 }
 
 .ft-text > p {
+    padding-left: 5px;
     font-size: 20px; 
 }
 
