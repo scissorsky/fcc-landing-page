@@ -228,3 +228,19 @@ input[type=email] {
 #submit:active {
     background-color: white;
 }
+
+footer {
+    padding: 20px; 
+    text-align: center; 
+    text-transform: lowercase;
+}
+
+footer > a {
+    color: #272727; 
+    font-weight: bold;
+}
+
+footer > a:hover {
+    background-color: var(--focus-color);
+    transition: 0.3s;
+}
