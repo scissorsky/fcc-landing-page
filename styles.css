@@ -2,6 +2,11 @@
     --focus-color: #fdd205; 
 }
 
+
+html {
+    scroll-padding-top: 131px;
+} 
+
 body {
     margin: 0; 
     font-family: 'Courier New', Courier, monospace;
@@ -21,7 +26,7 @@ h2 {
     text-transform: uppercase; 
 }
 
-header {
+#header {
     position: fixed; 
     top: 0; 
     z-index: 2;
@@ -30,9 +35,10 @@ header {
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
+    box-sizing: border-box; 
     padding: 20px 30px; 
     width: 100vw;  
-    height: 90px;
+    height: 131px;
     background-color: white; 
     font-family: Verdana, sans-serif; 
     text-transform: uppercase; 
@@ -59,6 +65,7 @@ header {
     display: flex; 
     justify-content: space-between;
     gap: 20px; 
+    padding: 0px; 
 }
 
 li {
@@ -80,16 +87,21 @@ li:hover {
     cursor: pointer;
 }
 
+main {
+    position: absolute; 
+    width: 100vw;  
+    margin: 0; 
+    padding: 0; 
+    top: 131px; /* added */ 
+}
+
 #features {
-    position: relative;
     display: flex; 
     justify-content: center; 
     align-items: center; 
     gap: 30px; 
     flex-wrap: wrap;
-    margin: 50px 0px 100px;
-    padding-bottom: 200px;  
-    top: 150px; 
+    padding: 20px 0 150px;  
 }
 
 #collage {
@@ -112,9 +124,7 @@ li:hover {
     grid-column: 4 / -1; 
     grid-row: 1;
     width: 640px; 
-    height: 799px; 
-    aspect-ratio: calc(); 
-    
+    height: 799px;     
 }
 
 #features .ft-text {
@@ -142,13 +152,13 @@ li:hover {
     flex-direction: column;
     align-items: center;
     gap: 50px; 
-    padding: 150px 0px; 
+    padding: 120px 0px; 
     background-color: var(--focus-color);
 }
 
 #pricing {
-    margin: 100px 0; 
-}
+    padding: 100px 0; 
+} 
 
 #pricing > h2 {
     text-align: center; 
@@ -214,6 +224,7 @@ button:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px; 
     background-image: url(./images/newsletter-bg.jpg);
     background-position: center;
     background-size: cover; 
@@ -223,7 +234,7 @@ button:active {
 #newsletter > h2 {
     color: white; 
     text-shadow: 2px 2px 3px #000000ab;
-    text-align: center;
+    text-align: center; 
 }
 
 form {
@@ -298,12 +309,16 @@ footer > a:hover {
 
 @media only screen and (max-width: 768px) {
 
+    html {
+        scroll-padding-top: 162px;
+    } 
+
     #header {
         flex-direction: column;
         align-content: flex-start;
         align-items: flex-start;
         padding: 15px 20px;  
-        height: auto; 
+        height: 162px; 
     }
 
     #header h1 {
@@ -322,6 +337,10 @@ footer > a:hover {
     li > a {
         font-size: 16px; 
         font-weight: bold; 
+    }
+
+    main {
+        top: 162px; 
     }
 
     #features {
@@ -361,7 +380,6 @@ footer > a:hover {
         height: 400px; 
     }
 
-
     #form {
         display: flex;
         flex-direction: column; 
@@ -378,6 +396,14 @@ footer > a:hover {
 
 @media only screen and (max-width: 425px) {
 
+    html {
+        scroll-padding-top: 104px;
+    } 
+
+    #header {
+        height: 104px; 
+    }
+
     #header-img {
         height: 35px; 
         width: 35px; 
@@ -393,6 +419,10 @@ footer > a:hover {
         padding: 5px;  
     }
 
+    main {
+        top: 104px; 
+    }
+
     #product-image {
         width: 166px; 
         height: 240px; 
@@ -401,10 +431,6 @@ footer > a:hover {
     #portrait {
         width: 255px; 
         height: 319px; 
-    }
-
-    #features {
-        margin: 0 0 80px; 
     }
 
     .ft-text > p {
@@ -452,9 +478,17 @@ footer > a:hover {
     aspect-ratio: 16/9; 
    }
 
+   #form {
+    padding: 35px;
+   }
+
 }
 
 @media only screen and (max-width: 320px) {
+
+   html {
+        scroll-padding-top: 144px;
+    }
 
     h2 {
         font-size: 20px; 
