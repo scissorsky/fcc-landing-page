@@ -2,7 +2,6 @@
     --focus-color: #fdd205; 
 }
 
-
 html {
     scroll-padding-top: 131px;
 } 
@@ -38,7 +37,7 @@ h2 {
     box-sizing: border-box; 
     padding: 20px 30px; 
     width: 100vw;  
-    height: 131px;
+    height: auto;
     background-color: white; 
     font-family: Verdana, sans-serif; 
     text-transform: uppercase; 
@@ -57,7 +56,6 @@ h2 {
 }
 
 #nav-bar {
-    position: fixed;
     right: 1.5%;
 } 
 
@@ -68,14 +66,14 @@ h2 {
     padding: 0px; 
 }
 
-li {
-    padding: 15px; 
+li { 
     list-style: none;
     background-color: #110e01;
 }
 
 li > a {
-    padding: 0; 
+    display: block; 
+    padding: 15px; 
     text-decoration: none;
     font-size: 20px; 
     color: white; 
@@ -87,12 +85,17 @@ li:hover {
     cursor: pointer;
 }
 
-main {
+li:active {
+    background-color: #fdae05;
+    transition: 0.2s;  
+}
+
+.absolute {
     position: absolute; 
     width: 100vw;  
     margin: 0; 
     padding: 0; 
-    top: 131px; /* added */ 
+    top: 131px; 
 }
 
 #features {
@@ -318,7 +321,6 @@ footer > a:hover {
         align-content: flex-start;
         align-items: flex-start;
         padding: 15px 20px;  
-        height: 162px; 
     }
 
     #header h1 {
@@ -330,7 +332,6 @@ footer > a:hover {
     }
 
     #nav-bar {
-        position: static;
         right: auto; 
     } 
 
@@ -339,7 +340,7 @@ footer > a:hover {
         font-weight: bold; 
     }
 
-    main {
+    .absolute {
         top: 162px; 
     }
 
@@ -397,11 +398,7 @@ footer > a:hover {
 @media only screen and (max-width: 425px) {
 
     html {
-        scroll-padding-top: 104px;
-    } 
-
-    #header {
-        height: 104px; 
+        scroll-padding-top: 110px;
     }
 
     #header-img {
@@ -415,12 +412,12 @@ footer > a:hover {
         margin: 10px 0 0 0;
     }
 
-    li {
-        padding: 5px;  
+    li > a {
+        padding: 10px;  
     }
 
-    main {
-        top: 104px; 
+    .absolute {
+        top: 110px; 
     }
 
     #product-image {
@@ -456,6 +453,10 @@ footer > a:hover {
 }
 
 @media only screen and (max-width: 375px) {
+
+    li > a {
+        font-size: 14px; 
+     } 
 
    #product-image {
     width: 140px; 
@@ -495,8 +496,10 @@ footer > a:hover {
     }
 
     li > a {
+       font-size: 12px; 
         font-size: 12px; 
-    }
+       font-size: 12px; 
+    } 
 
     #product-image {
         width: 120px; 
