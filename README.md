@@ -18,7 +18,7 @@ freeCodeCamp requires students to complete a specific projects in order to recei
 > 15. Your product landing page should have at least one media query
 > 16. Your product landing page should utilize CSS flexbox at least once
 
-##Photo Credit: 
+## Photo Credit: 
 
 - [Lemon icon by Freepik, Flaticon](https://www.flaticon.com/free-icon/lemon_2659492?term=lemon&page=1&position=57&page=1&position=57&related_id=2659492&origin=searchs)
 
