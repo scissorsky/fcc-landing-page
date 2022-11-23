@@ -27,3 +27,7 @@ freeCodeCamp requires students to complete a specific projects in order to recei
 - [Portrait photo by Fleur Kaan, Unsplash](https://unsplash.com/photos/e7jpGYe7OtU)
 
 - [Hand photo by womanizer, Unsplash](https://unsplash.com/photos/8oB43mw658c)
+
+## More:
+
+In order to hide the email visually without hiding it from screenreaders, I used a code snippet from this source: https://www.a11yproject.com/posts/how-to-hide-content/

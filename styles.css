@@ -255,6 +255,18 @@ input[type=email] {
     border: 1px solid black; 
 }
 
+/* the code below hides content while leaving it available for screen-readers */
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px; 
+    overflow: hidden; 
+    position: absolute; 
+    white-space: nowrap;
+    width: 1px; 
+}
+
 #submit {
     padding: 2px 5px;
     font-family: 'Courier New', Courier, monospace;
