@@ -37,7 +37,7 @@ h2 {
     flex-wrap: wrap;
     box-sizing: border-box; 
     padding: 20px 30px; 
-    width: 100vw;  
+    width: 100%;  
     height: auto;
     background-color: white; 
     font-family: Verdana, sans-serif; 
@@ -93,7 +93,7 @@ li:active {
 
 .absolute {
     position: absolute; 
-    width: 100vw;  
+    width: 100%;  
     margin: 0; 
     padding: 0; 
     top: 131px; 
