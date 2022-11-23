@@ -204,6 +204,7 @@ li:active {
     margin-bottom: 10px;
     padding: 5px; 
     background-color: var(--focus-color);
+    font-weight: bold;
 }
 
 button {
